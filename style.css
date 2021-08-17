@@ -1,0 +1,107 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-size: 14px;
+}
+body {
+	width: 100%;
+	min-height: 100vh;
+	background-color: rgb(243, 243, 243);
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+}
+.instagram-container {
+	/*background-color: green;*/
+	display: flex; /*deixa os itens dentro do container em linha*/
+	align-items: center; /*alinhamento vertical (eixo y) dos itens*/
+	justify-content: start; /*alinhamento horizontal (eixo x) dos itens*/
+	width: 60%;
+	height: 100vh;
+	box-sizing: border-box;
+}
+.imagem-container {
+	/*background-color: blue;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+}
+.imagem-container img {
+	width: auto;
+}
+.login-container {
+	/*background-color: red;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	width: 50%;
+	min-height: 34rem;
+}
+.card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	background-color: #ffffff;
+	width: 100%;
+	padding: 1.3rem 0;
+	border: 1px solid lightgray;
+}
+.card:nth-child(1) { /*seleciona o primeiro card*/
+	min-height: 19rem;
+}
+.entrar-container button {
+	background-color: #0095f6;
+	color: #ffffff;
+	padding: 2px 8px;
+	border-radius: 4px;
+	width: 10rem;
+}
+.download-container {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	flex-direction: column;
+}
+.download {
+	display: flex;
+	justify-content: center;
+	height: 3rem;
+	width: 10rem;
+	background-size: cover;
+}
+.img-app-store {
+	height: 40px;
+}
+.img-google-store {
+	height: 40px;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+	.instagram-container {
+		width: 90%;
+	}
+}
+
+@media screen and (min-width: 360px) and (max-width: 600px) {
+	.instagram-container {
+		width: 90%;
+	}
+	.imagem-container {
+		display: none;
+	}
+	.login-container {
+		width: 100%;
+	}
+	.card {
+		background-color: rgb(243, 243, 243);
+		border: 1px solid transparent;
+	}
+}
