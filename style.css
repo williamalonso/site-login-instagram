@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	font-size: 14px;
+	font-family: sans-serif;
 }
 body {
 	width: 100%;
@@ -38,9 +39,19 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	flex-direction: column;
+	flex-direction: column; /*Coloca o display em coluna*/
 	width: 50%;
 	min-height: 34rem;
+}
+.username-form {
+	width: 20rem;
+	height: 2rem;
+	margin-bottom: 8px;
+}
+.password-form {
+	width: 20rem;
+	height: 2rem;
+	margin-bottom: 8px;
 }
 .card {
 	display: flex;
@@ -70,18 +81,32 @@ body {
 	padding: 1rem;
 	flex-direction: column;
 }
+.download-container p {
+	margin-bottom: 20px;
+}
 .download {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	height: 3rem;
 	width: 10rem;
 	background-size: cover;
+	margin: 1px;
 }
 .img-app-store {
 	height: 40px;
+	margin: 5px;
 }
 .img-google-store {
 	height: 40px;
+	margin: 5px;
+}
+.cadastro-container {
+	margin: 10px;
+}
+.cadastro-container a {
+	color: rgba(var(--d69,0,149,246),1);
+	font-weight: 600;
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
