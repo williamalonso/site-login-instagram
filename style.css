@@ -27,12 +27,11 @@ body {
 .imagem-container {
 	/*background-color: blue;*/
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	justify-content: flex-end;
 	width: 50%;
 }
 .imagem-container img {
-	width: auto;
+	
 }
 .login-container {
 	/*background-color: red;*/
@@ -59,7 +58,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 	background-color: #ffffff;
-	width: 100%;
+	width: 75%;
 	padding: 1.3rem 0;
 	border: 1px solid lightgray;
 }
@@ -69,9 +68,26 @@ body {
 .entrar-container button {
 	background-color: #0095f6;
 	color: #ffffff;
+	height: 30px;
 	padding: 2px 8px;
 	border-radius: 4px;
-	width: 10rem;
+	box-shadow: none;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.entrar-container p {
+	margin-bottom: 20px;
+}
+.botao-facebook {
+	color: rgba(var(--d69,0,149,246),1);
+	font-weight: 600;
+}
+.botao-senha {
+	font-size: 12px;
+	text-decoration: none;
+	color: rgba(var(--fe0,0,55,107),1);
 }
 .download-container {
 	display: flex;
@@ -109,13 +125,7 @@ body {
 	font-weight: 600;
 }
 
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-	.instagram-container {
-		width: 90%;
-	}
-}
-
-@media screen and (min-width: 360px) and (max-width: 600px) {
+@media (max-width: 533px) {
 	.instagram-container {
 		width: 90%;
 	}
