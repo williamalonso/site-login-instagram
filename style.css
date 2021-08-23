@@ -125,7 +125,77 @@ body {
 	font-weight: 600;
 }
 
-@media (max-width: 533px) {
+@media (max-width: 290px){
+	.entrar-container img {
+		width: 95%;
+	}
+	.username-form {
+		margin-top: 20px;
+	}
+	.instagram-container {
+		width: 90%;
+	}
+	.imagem-container {
+		display: none;
+	}
+	.login-container {
+		width: 100%;
+	}
+	.card {
+		background-color: rgb(243, 243, 243);
+		border: 1px solid transparent;
+	}
+}
+
+@media screen and (max-width:650px) {
+	.entrar-container img {
+		width: 95%;
+	}
+	.username-form {
+		margin-top: 20px;
+	}
+	.instagram-container {
+		width: 90%;
+	}
+	.imagem-container {
+		display: none;
+	}
+	.login-container {
+		width: 100%;
+	}
+	.card {
+		background-color: rgb(243, 243, 243);
+		border: 1px solid transparent;
+	}
+}
+@media (min-width: 651px) and (max-width: 800px) {
+	.entrar-container img {
+		width: 60%;
+	}
+	.username-form {
+		margin-top: 30px;
+	}
+	.instagram-container {
+		width: 90%;
+	}
+	.imagem-container {
+		display: none;
+	}
+	.login-container {
+		width: 100%;
+	}
+	.card {
+		background-color: rgb(243, 243, 243);
+		border: 1px solid transparent;
+	}
+}
+@media (min-width: 801px) and (max-width: 1024px) {
+	.entrar-container img {
+		width: 60%;
+	}
+	.username-form {
+		margin-top: 30px;
+	}
 	.instagram-container {
 		width: 90%;
 	}
